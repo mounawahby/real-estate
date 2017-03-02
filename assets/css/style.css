@@ -1,5 +1,30 @@
 body {
-    background: #34495e;
-    color: white;
+	background:url('gi.gif') no-repeat;
+    position: center;
+    text-align: center;
+    color: black;
     padding: 50px;
+    font-family: courier;
+    width:500px;
+    margin:0 auto;
+    padding:0px;
+    border: 10px dotted lightblue;
+  font-weight: bold;
+  font-family: verdana;
+  
+}
+h1
+{
+
+  color: lightblue ;
+  width: 100%;
+  text-align: center;
+  font-size: 37px;
+  font-family: courier;
+}
+button {
+  color: black;
+  border: 10px solid lightblue;
+  font-weight: bold;
+  font-family: verdana;
 }
