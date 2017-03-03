@@ -7,9 +7,43 @@
 </head>
 
 <body>
-    <p>Welcome to
-        <%= message %>
-    </p>
+<h1> We Tell You If It's A Good Deal Or Not  </h1>
+    <!--p>Welcome to
+        <!--%= message %-->
+    </p-->
+	 
+
+	<form method = "get" action = "/process">
+		<div class = "row">
+		
+			<div class ="col-xs-8 col-sm-9">
+			<input type = "text" class = "form-control" name ="lbcUrl" placeholder ="https://www.leboncoin.fr">
+			</div>
+			
+			<div class = "col-xs-4 col-sm-3">
+			
+				<button  type = "submit" class = "button-xsmall pure-button" color="black" > Tell me </button>
+			</div>
+			
+		</div>
+	</form>
+
+	<%if (error == "No error") { %>
+	
+	<%if (data.deal.good) { %>
+	<p> Good deal ! </p>
+	<%} else {%>
+	<p> Bad deal !</p>
+	<%}%>
+	
+	<%}else{%>
+	
+	<%=error%>
+	
+	<%}%>
+
+	
+	
 </body>
 
 </html>
